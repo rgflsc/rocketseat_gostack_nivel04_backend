@@ -2610,12 +2610,24 @@ tslib@^1.8.1, tslib@^1.9.0:
   resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/tslib/-/tslib-1.11.1.tgz#eb15d128827fbee2841549e171f45ed338ac7e35"
   integrity sha1-6xXRKIJ/vuKEFUnhcfRe0zisfjU=
 
+tslib@^1.9.3:
+  version "1.11.2"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/tslib/-/tslib-1.11.2.tgz#9c79d83272c9a7aaf166f73915c9667ecdde3cc9"
+  integrity sha1-nHnYMnLJp6rxZvc5Fclmfs3ePMk=
+
 tsutils@^3.17.1:
   version "3.17.1"
   resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/tsutils/-/tsutils-3.17.1.tgz#ed719917f11ca0dee586272b2ac49e015a2dd759"
   integrity sha1-7XGZF/EcoN7lhicrKsSeAVot11k=
   dependencies:
     tslib "^1.8.1"
+
+tsyringe@^4.2.0:
+  version "4.2.0"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/tsyringe/-/tsyringe-4.2.0.tgz#98aca590e19f02949e63a8e374e77e5c8513d594"
+  integrity sha1-mKylkOGfApSeY6jjdOd+XIUT1ZQ=
+  dependencies:
+    tslib "^1.9.3"
 
 type-check@~0.3.2:
   version "0.3.2"
