@@ -3,7 +3,7 @@ import CreateAppointmentService from './CreateAppointmentService';
 
 import AppError from '@shared/errors/AppError';
 
-describe('CreateAppointmen', () => {
+describe('CreateAppointment', () => {
   it('should be able to create a new appointment', async () => {
     const fakeAppointmenstRepositry = new FakeAppointmenstRepositry();
     const createAppointmentService = new CreateAppointmentService(fakeAppointmenstRepositry);
