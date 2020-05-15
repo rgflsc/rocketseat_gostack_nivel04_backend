@@ -14,6 +14,16 @@ class UserTokensRepositry implements IUserTokensRepository {
       updated_at: new Date(),
     };
   }
+
+  public async findByToken(token: string): Promise<UserToken | undefined> {
+    return {
+      id: '',
+      token: '',
+      user_id: '',
+      created_at: new Date(),
+      updated_at: new Date(),
+    };
+  }
 }
 
 export default UserTokensRepositry;
