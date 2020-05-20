@@ -25,8 +25,8 @@ class ListProviderMonthAvaliabilityService {
   public async execute({ provider_id, month, year }: IRequest): Promise<IResponse> {
     const appointments = await this.appointmentsRepository.findAllInMonthFromProvider({
       provider_id,
-      year,
       month,
+      year,
     });
 
     const numberOfFDaysInMonth = getDaysInMonth(new Date(year, month - 1));

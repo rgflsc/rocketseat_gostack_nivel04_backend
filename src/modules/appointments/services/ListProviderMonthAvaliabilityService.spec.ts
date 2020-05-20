@@ -70,8 +70,8 @@ describe('ListProviderMonthAvaliability', () => {
 
     const availability = await listProviderMonthAvaliabilityService.execute({
       provider_id: 'provider01',
-      year: 2020,
       month: 5,
+      year: 2020,
     });
 
     expect(availability).toEqual(expect.arrayContaining([
