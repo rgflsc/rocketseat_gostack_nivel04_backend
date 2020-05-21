@@ -14,8 +14,9 @@ describe('CreateAppointment', () => {
 
   it('should be able to create a new appointment', async () => {
     const appointment = await createAppointmentService.execute({
+      provider_id: '123456',
+      user_id: '123456',
       date: new Date(),
-      provider_id: '123456'
     });
 
     expect(appointment).toHaveProperty('id');
@@ -26,13 +27,15 @@ describe('CreateAppointment', () => {
     const appointmentDate = new Date(2020, 4, 10, 11);
 
     await createAppointmentService.execute({
+      provider_id: '123456',
+      user_id: '123456',
       date: appointmentDate,
-      provider_id: '123456'
     });
 
     await expect(createAppointmentService.execute({
+      provider_id: '123456',
+      user_id: '123456',
       date: appointmentDate,
-      provider_id: '123456'
     })).rejects.toBeInstanceOf(AppError)
   });
 });
