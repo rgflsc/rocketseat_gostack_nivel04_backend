@@ -1,0 +1,1 @@
+import { RedisOptions } from 'ioredis'

@@ -565,6 +565,13 @@
   dependencies:
     "@types/node" "*"
 
+"@types/ioredis@^4.16.2":
+  version "4.16.2"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/@types/ioredis/-/ioredis-4.16.2.tgz#192c487a003463a6881dbc29faaa168902ef851a"
+  integrity sha1-GSxIegA0Y6aIHbwp+qoWiQLvhRo=
+  dependencies:
+    "@types/node" "*"
+
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0", "@types/istanbul-lib-coverage@^2.0.1":
   version "2.0.1"
   resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.1.tgz#42995b446db9a48a11a07ec083499a860e9138ff"
@@ -653,6 +660,13 @@
   version "1.2.3"
   resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/@types/range-parser/-/range-parser-1.2.3.tgz#7ee330ba7caafb98090bece86a5ee44115904c2c"
   integrity sha1-fuMwunyq+5gJC+zoal7kQRWQTCw=
+
+"@types/redis@^2.8.21":
+  version "2.8.21"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/@types/redis/-/redis-2.8.21.tgz#4bd4a56747ee57156e50a4389ece0f79f1dfeac6"
+  integrity sha1-S9SlZ0fuVxVuUKQ4ns4PefHf6sY=
+  dependencies:
+    "@types/node" "*"
 
 "@types/serve-static@*":
   version "1.13.3"
@@ -1315,6 +1329,11 @@ cliui@^6.0.0:
     strip-ansi "^6.0.0"
     wrap-ansi "^6.2.0"
 
+cluster-key-slot@^1.1.0:
+  version "1.1.0"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/cluster-key-slot/-/cluster-key-slot-1.1.0.tgz#30474b2a981fb12172695833052bc0d01336d10d"
+  integrity sha1-MEdLKpgfsSFyaVgzBSvA0BM20Q0=
+
 co@^4.6.0:
   version "4.6.0"
   resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
@@ -1596,6 +1615,11 @@ delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
+
+denque@^1.1.0, denque@^1.4.1:
+  version "1.4.1"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/denque/-/denque-1.4.1.tgz#6744ff7641c148c3f8a69c307e51235c1f4a37cf"
+  integrity sha1-Z0T/dkHBSMP4ppwwflEjXB9KN88=
 
 depd@~1.1.2:
   version "1.1.2"
@@ -2624,6 +2648,21 @@ inquirer@^7.0.0:
     strip-ansi "^6.0.0"
     through "^2.3.6"
 
+ioredis@^4.17.1:
+  version "4.17.1"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/ioredis/-/ioredis-4.17.1.tgz#06ef3d3b2cb96b7e6bc90a7b8839a33e743843ad"
+  integrity sha1-Bu89Oyy5a35ryQp7iDmjPnQ4Q60=
+  dependencies:
+    cluster-key-slot "^1.1.0"
+    debug "^4.1.1"
+    denque "^1.1.0"
+    lodash.defaults "^4.2.0"
+    lodash.flatten "^4.4.0"
+    redis-commands "1.5.0"
+    redis-errors "^1.2.0"
+    redis-parser "^3.0.0"
+    standard-as-callback "^2.0.1"
+
 ip-regex@^2.1.0:
   version "2.1.0"
   resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/ip-regex/-/ip-regex-2.1.0.tgz#fa78bf5d2e6913c911ce9f819ee5146bb6d844e9"
@@ -3520,6 +3559,16 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
+lodash.defaults@^4.2.0:
+  version "4.2.0"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
+  integrity sha1-0JF4cW/+pN3p5ft7N/bwgCJ0WAw=
+
+lodash.flatten@^4.4.0:
+  version "4.4.0"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/lodash.flatten/-/lodash.flatten-4.4.0.tgz#f31c22225a9632d2bbf8e4addbef240aa765a61f"
+  integrity sha1-8xwiIlqWMtK7+OSt2+8kCqdlph8=
+
 lodash.includes@^4.3.0:
   version "4.3.0"
   resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/lodash.includes/-/lodash.includes-4.3.0.tgz#60bb98a87cb923c68ca1e51325483314849f553f"
@@ -4331,6 +4380,11 @@ range-parser@~1.2.1:
   resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha1-PPNwI9GZ4cJNGlW4SADC8+ZGgDE=
 
+rate-limiter-flexible@^2.1.6:
+  version "2.1.6"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/rate-limiter-flexible/-/rate-limiter-flexible-2.1.6.tgz#f81a1d43da4bf53bb5304f49fda150e13a595408"
+  integrity sha1-+BodQ9pL9Tu1ME9J/aFQ4TpZVAg=
+
 raw-body@2.4.0:
   version "2.4.0"
   resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/raw-body/-/raw-body-2.4.0.tgz#a1ce6fb9c9bc356ca52e89256ab59059e13d0332"
@@ -4429,6 +4483,33 @@ redent@^1.0.0:
   dependencies:
     indent-string "^2.1.0"
     strip-indent "^1.0.1"
+
+redis-commands@1.5.0, redis-commands@^1.5.0:
+  version "1.5.0"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/redis-commands/-/redis-commands-1.5.0.tgz#80d2e20698fe688f227127ff9e5164a7dd17e785"
+  integrity sha1-gNLiBpj+aI8icSf/nlFkp90X54U=
+
+redis-errors@^1.0.0, redis-errors@^1.2.0:
+  version "1.2.0"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/redis-errors/-/redis-errors-1.2.0.tgz#eb62d2adb15e4eaf4610c04afe1529384250abad"
+  integrity sha1-62LSrbFeTq9GEMBK/hUpOEJQq60=
+
+redis-parser@^3.0.0:
+  version "3.0.0"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/redis-parser/-/redis-parser-3.0.0.tgz#b66d828cdcafe6b4b8a428a7def4c6bcac31c8b4"
+  integrity sha1-tm2CjNyv5rS4pCin3vTGvKwxyLQ=
+  dependencies:
+    redis-errors "^1.0.0"
+
+redis@^3.0.2:
+  version "3.0.2"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/redis/-/redis-3.0.2.tgz#bd47067b8a4a3e6a2e556e57f71cc82c7360150a"
+  integrity sha1-vUcGe4pKPmouVW5X9xzILHNgFQo=
+  dependencies:
+    denque "^1.4.1"
+    redis-commands "^1.5.0"
+    redis-errors "^1.2.0"
+    redis-parser "^3.0.0"
 
 reflect-metadata@^0.1.13:
   version "0.1.13"
@@ -4923,6 +5004,11 @@ stack-utils@^2.0.2:
   integrity sha1-XPSLRVe+y0Y40LxPIdI/XRlYZZM=
   dependencies:
     escape-string-regexp "^2.0.0"
+
+standard-as-callback@^2.0.1:
+  version "2.0.1"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/standard-as-callback/-/standard-as-callback-2.0.1.tgz#ed8bb25648e15831759b6023bdb87e6b60b38126"
+  integrity sha1-7YuyVkjhWDF1m2Ajvbh+a2CzgSY=
 
 static-extend@^0.1.1:
   version "0.1.2"
