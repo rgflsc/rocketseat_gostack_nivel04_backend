@@ -3885,6 +3885,11 @@ mime@1.6.0:
   resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
   integrity sha1-Ms2eXGRVO9WNGaVor0Uqz/BJgbE=
 
+mime@^2.4.5:
+  version "2.4.5"
+  resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/mime/-/mime-2.4.5.tgz#d8de2ecb92982dedbb6541c9b6841d7f218ea009"
+  integrity sha1-2N4uy5KYLe27ZUHJtoQdfyGOoAk=
+
 mimic-fn@^2.1.0:
   version "2.1.0"
   resolved "https://artifactory.softplan.com.br/artifactory/api/npm/npm/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
