@@ -13,7 +13,7 @@ const limiter = new RateLimiterRedis({
   storeClient: redisClient,
   keyPrefix: 'middleware',
   points: 5,
-  duration: 1
+  duration: 1,
 });
 
 export default async function rateLimiter(request: Request, response: Response, next: NextFunction): Promise<void> {
