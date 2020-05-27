@@ -1,25 +1,28 @@
 import AppError from '@shared/errors/AppError';
 
-import FakeAppointmenstRepositry from '@modules/appointments/repositories/fakes/FakeAppointmentsRepository';
+import FakeAppointmenstRepository from '@modules/appointments/repositories/fakes/FakeAppointmentsRepository';
+import FakeCacheProvider from '@shared/container/providers/CacheProvider/fakes/FakeCacheProvider';
 import ListProviderAppointmentsService from './ListProviderAppointmentsService';
 
-let fakeAppointmenstRepositry: FakeAppointmenstRepositry;
+let fakeAppointmenstRepository: FakeAppointmenstRepository;
+let fakeCacheProvider: FakeCacheProvider;
 let listProviderAppointmentsService: ListProviderAppointmentsService;
 
 describe('ListProviderAppointments', () => {
   beforeEach(() => {
-    fakeAppointmenstRepositry = new FakeAppointmenstRepositry();
-    listProviderAppointmentsService = new ListProviderAppointmentsService(fakeAppointmenstRepositry);
+    fakeAppointmenstRepository = new FakeAppointmenstRepository();
+    fakeCacheProvider = new FakeCacheProvider();
+    listProviderAppointmentsService = new ListProviderAppointmentsService(fakeAppointmenstRepository, fakeCacheProvider);
   });
 
   it('should be able to list the appointments on a specific day', async () => {
-    const appointment01 = await fakeAppointmenstRepositry.create({
+    const appointment01 = await fakeAppointmenstRepository.create({
       provider_id: 'provider_id',
       user_id: 'user_id_01',
       date: new Date(2020, 4, 20, 14, 0, 0),
     });
 
-    const appointment02 = await fakeAppointmenstRepositry.create({
+    const appointment02 = await fakeAppointmenstRepository.create({
       provider_id: 'provider_id',
       user_id: 'user_id_02',
       date: new Date(2020, 4, 20, 15, 0, 0),
